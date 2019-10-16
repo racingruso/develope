@@ -1,0 +1,61 @@
+install LAMP
+=================
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
+1. sudo apt-get update
+2. sudo apt-get install apache2
+3. sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+4. sudo mysql_install_db
+5. sudo /usr/bin/mysql_secure_installation
+====
+install PHP
+====
+1. sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+2. sudo nano /etc/apache2/mods-enabled/dir.conf
+Add index.php to the beginning of index files.
+3. sudo nano /var/www/html/info.php
+Add in the following line:
+
+<?php
+phpinfo();
+?>
+4.sudo service apache2 restart
+
+5. http://localhost/info.php
+======================================================
+install MySQLdb
+===============
+
+install MySQLdb in python3
+=============================
+sudo apt-get install python3-dev
+sudo apt-get install libmysqlclient-dev
+sudo apt-get install zlib1g-dev
+sudo pip3 install mysqlclient
+
+
+1. sudo apt-get install libmysqlclient-dev
+2. export PATH=$PATH:/usr/local/mysql/bin
+3. sudo apt-get update
+
+4. sudo apt-get install python-dev
+
+5. sudo apt-get install python-MySQLdb
+======================================================
+
+MYSQL CREATE DATABASE
+======================
+sudo mysql -u root -p
+123456
+sse123
+
+mysql> create database registration;
+use registration;
+PROGRAMS
+==========
+
+1. Execute python mysqlconnection.py
+2. Execute python createtable.py
+3. Execute python inserdb.py
+
+https://www.tutorialspoint.com/python/python_database_access.html
+
